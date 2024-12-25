@@ -1,8 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include<cstdlib>
-#include<Windows.h>
+#include <cstdlib>
+#include <Windows.h>
+#include <cctype>
 using namespace std;
 
 void menu();
@@ -125,8 +126,15 @@ int main()
 
     while (true) 
     {
+
         menu();
         cin >> choice;
+        if (choice == !isdigit)
+        {
+            cout << "Inavlid Option" << endl;
+          
+           return 1;
+        }
         system("cls");
         switch (choice) 
         {
@@ -135,6 +143,12 @@ int main()
             x:
             jobmenu();
             cin >> ch;
+             if (ch == !isdigit)
+        {
+            cout << "Inavlid Option" << endl;
+          
+           return 1;
+        }
             system("cls");
             switch (ch)
             {
@@ -169,6 +183,12 @@ int main()
             y:
             candidatemenu();
             cin >> ch;
+             if (ch == !isdigit)
+        {
+            cout << "Inavlid Option" << endl;
+          
+           return 1;
+        }
             system("cls");
             switch (ch) 
             {
